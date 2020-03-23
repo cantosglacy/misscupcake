@@ -1,0 +1,324 @@
+*{box-sizing: border-box;
+}
+
+body{ 
+ 
+   margin: 0;
+   padding: 0;
+   font-family: Open Sans;
+   font-weight: 100;
+    
+}
+
+
+
+@font-face{
+    font-family:'pacifico';
+    src: url(/Fonts/pacifico/Pacifico-Regular.ttf);
+    font-style: normal;
+    font-weight: 100 , 600;
+
+}
+
+@font-face{
+    font-family: Open Sans;
+    src: url(/Fonts/opensans/OpenSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 1000px){
+    #header{flex-direction: column;
+    }
+
+    .menu{
+    }
+
+}
+
+@media screen and (max-width: 790px){
+    #header{flex-direction: column;
+    }
+
+    .menu{display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+}
+a{
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+
+.brand{
+}
+
+
+#header{display: flex;
+        flex-wrap:wrap ;
+        
+        /*background-color:rgb(244,119,149);*/
+}
+
+.Logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.menu{
+  
+    display: flex;
+   flex: 4;
+   justify-content: center;
+ align-items: flex-end;
+}
+
+
+
+.menu a{
+    padding: 0 20px;
+    font-family: pacifico;
+    color: #5D5A5C;
+    text-decoration: none; 
+    font-size: 30px;
+    transition: font-size .24s ease;
+    -webkit-transition: font-size .24s ease;
+    -moz-transition: font-size .24s ease;
+    -o-transition: font-size .24s ease;
+    -ms-transition: font-size .24s ease;
+}
+
+#header a:hover{
+   color:tomato; 
+   font-size: 35px;
+}
+
+
+
+/*Banner*/
+
+#banner{
+    display:flex;
+   
+    flex-direction: column;
+    background:url(images/cake.jpg) bottom;
+    background-size: cover;
+    background-repeat: no-repeat    ;
+   
+    text-align: center;
+    align-items: center;
+    padding: 100px 50px 200px 50px;
+    min-width: 300px;
+}
+
+#banner h1{
+  
+    font-family: pacifico;
+    font-weight: 100;
+    font-size: 80px;
+    color: rgb(240, 45, 87);
+    line-height: 1em;
+}
+#banner .button
+{width: 30%;
+
+}
+
+
+.button{
+  
+    padding: 10px 20px;
+    color: #5D5A5C;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color:#F5C2CA;
+    font-family: pacifico;
+    font-weight: 600;
+    border: none;
+}
+.button:hover{
+    color:#5D5A5C;
+    background-color: rgb(244,119,149);
+    transition: .25s ease;
+}
+
+#about{
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+#about .wrapper{
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 50px;
+
+
+}
+#about h2{font-family: pacifico;font-weight: 100;
+    font-size:40px;
+    color:rgb(244,119,149);
+    margin-bottom: 0;
+}
+h3{color: #585A5C;
+    font-size: 30px;font-family: pacifico;font-weight: 100;
+    
+
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+#about a{
+    color:rgb(244,119,149);
+    line-height: 10px;
+}
+#about a:hover {
+
+    color:black;
+}
+
+#about span{color: #520532;}
+
+/*Product*/
+.cupcake{
+  
+    display: flex;
+    flex-wrap: wrap;
+   text-align: center;
+   height: 100%;
+   ;
+    
+
+}
+
+.box{  
+    flex: 1;
+    min-width: 300px;
+    padding: 10px 20px;
+    margin: 20px 0 0px 0;
+    height: 100%;
+}
+.box img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.product{
+  text-align: center;
+  
+ 
+    padding: 0 100px;
+    background-color: white;
+}
+.product h2{font-family: pacifico;font-weight: 100;
+    font-size:40px;
+    color:rgb(244,119,149);
+}
+
+/*Boxes*/
+
+
+
+#ads{
+    background-color: #F5C2CA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#ads .h3{width: 100%;
+  
+    
+}
+#ads .icon{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+  .icon-wrapper{
+      flex: 1;
+  } text-align: center;
+   
+}
+#ads .icon:first-child{
+  
+   
+}
+#ads .icon img{
+    height: ;: 100%;
+ 
+}
+
+#ads .icon a{color:#585A5C;
+}
+
+#ads a:hover{
+    color:#F47795;
+}
+
+/*Footer*/
+#footer{
+    display:flex;
+    flex-direction:column ;
+    padding-top:-100em ;
+   
+}
+.link
+{flex: 1;
+display: flex;
+justify-content: center;
+
+
+
+
+}
+#footer ul{
+    list-style: none;
+ padding: 0;
+}
+
+#footer .content{
+    width: 30%;
+}
+
+#footer .content p{
+    text-align: left;
+    font-size: 10px;
+}
+
+#footer a, li{
+    color: black;
+    
+    font-size: 10px;
+}
+
+#footer h4{font-family: pacifico;font-weight: 100;
+color: #F47795;
+font-size: 15px;
+margin-bottom: -10px;
+}
+
+#footer a:hover{
+    color:#F47795;
+}
+
+.copy{
+    clear: both;
+}
+.copy p{float: none;clear: both;
+    font-size: 8px;
+text-align: center;
+}
